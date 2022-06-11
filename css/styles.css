@@ -131,7 +131,7 @@ body{
     padding-bottom: 32px;*/
     color: var(--accent-color-black);
 
-    transition-property: var(--accent-color);
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -153,7 +153,7 @@ body{
 
    
     left: 0;
-    top: 46px;
+    top: 45px;
     
 }
 
@@ -172,19 +172,21 @@ body{
     letter-spacing: 0.02em;
     color:var(--accent-color-gray);
 
-    transition-property: var(--accent-color);
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail{
+    display: flex;
+    align-items: center;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     margin-left:auto;
     color:var(--accent-color-gray);
 
-    transition-property: var(--accent-color);
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -257,6 +259,7 @@ body{
     padding-bottom: 10px;
     
     border-radius:4px;
+    border: transparent;
    
     font-weight: 700;
     font-size: 16px;
@@ -264,9 +267,10 @@ body{
     letter-spacing: 0.06em;
     cursor: pointer;
     color: #FFFFFF;
-    background: var(--accent-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-    transition-property: var(--accent-color);
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -277,7 +281,7 @@ body{
 }
 .modal-btn:hover,
 .modal-btn:focus{
-    background:var(--accent-color);
+    background-color:var(--accent-color);
     color: #ffffff;
 }
 
@@ -417,7 +421,7 @@ body{
     background: #FFFFFF;
     margin-right: 30px;
     background: #FFFFFF;
-    /* material shadow v1 */
+   
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -511,7 +515,7 @@ body{
     color: #FFFFFF;
     margin-bottom: 9px;
 
-    transition-property: var(--accent-color);
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -530,7 +534,7 @@ body{
 
     color: rgba(255, 255, 255, 0.6);
 
-    transition-property: var(--accent-color);
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -549,7 +553,7 @@ body{
 
     color: rgba(255, 255, 255, 0.6);
     
-    transition-property: var(--accent-color);
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -611,9 +615,10 @@ body{
     
 
 
-    transition-property:background-color:var(--accent-color);
+    transition-property: background-color,color,box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 
     
 }
@@ -621,7 +626,7 @@ body{
 .button-portfolio:hover,
 .button-portfolio:focus{
     color: #FFFFFF;
-    background: var(--accent-color);
+    background-color: var(--accent-color);
     cursor: pointer;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -664,10 +669,9 @@ body{
 
 .projects-item-link{
     display:block;
+    
 
-    transition-property:box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-    0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);;
+    transition-property:box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -676,8 +680,7 @@ body{
 .projects-item-link:hover,
 .projects-item-link:focus{
     
-   
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -735,7 +738,7 @@ body{
 
  fill:rgba(117, 117, 117, 1);
 
-transition-property: fill:rgba(33, 150, 243, 1);
+transition-property: fill;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  
@@ -820,7 +823,11 @@ color: var(--accent-color-black)
     border-radius: 4px;
     fill:rgba(175, 177, 184, 1);
 
-    transition-property:fill: rgba(33, 150, 243, 1);
+    transition-property:fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    transition-property:border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -828,7 +835,7 @@ color: var(--accent-color-black)
 .social-link-list:hover,
 .social-link-list:focus{
     border: 1px solid #2196F3;
-    border-radius: 4px;
+    
     fill: rgba(33, 150, 243, 1);
 }
 
@@ -857,9 +864,11 @@ color: var(--accent-color-black)
 
    
 
-    transition-property:background-color #2196F3;
+    transition-property: background-color,fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
 }
 
 .social-list-link:hover,
@@ -870,6 +879,10 @@ color: var(--accent-color-black)
 
 .social-list-icon {
     fill: rgba(175, 177, 184, 1);
+
+    transition-property:fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     
 
@@ -931,16 +944,16 @@ color: var(--accent-color-black)
 
 .social-list-link-futer{
 
-display: flex;
-align-items: center;
-justify-content: center;
-width: 44px;
-height: 44px;
-border-radius: 50%;
-background: rgba(255, 255, 255, 0.1);
-fill: rgba(255, 255, 255, 1)
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    fill: rgba(255, 255, 255, 1);
 
-transition-property: background-color #2196F3;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -949,7 +962,7 @@ transition-property: background-color #2196F3;
   
 .social-list-link-futer:hover,
 .social-list-link-futer:focus{
-    background: #2196F3;
+    background-color: #2196F3;
     
 }
 /* =============== BACKDROP =============== */
