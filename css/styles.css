@@ -276,7 +276,7 @@ body{
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    transition-property: color #ffffff;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -911,8 +911,58 @@ color: var(--accent-color-black)
     display: flex;
     flex-direction: column;
     margin-left: 70px;
+}
 
+.futer-container{
+    display:flex;
+    flex-direction: column;
+    margin-left: 93px;
+    
+}
 
+.futer-label-area{
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-right: auto;
+    padding-bottom: 15px;
+
+    width: 350px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+   
+    border-radius: 4px;
+    
+    background: #2F303A;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+   
+    letter-spacing: 0.03em;
+    
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.label-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+
+    margin-bottom: 20px;
+}
+
+.futer-label{
+    
+    
+    
 }
 
 .futer-text{
@@ -928,6 +978,17 @@ color: var(--accent-color-black)
     
     color: #FFFFFF;
 }
+
+
+.label-btn{
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    
+}
+
 
 .container-flex{
     display: flex;
