@@ -926,7 +926,7 @@ color: var(--accent-color-black)
     padding-right: auto;
     padding-bottom: 15px;
 
-    width: 350px;
+    width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
    
@@ -943,6 +943,9 @@ color: var(--accent-color-black)
     letter-spacing: 0.03em;
     
     color: rgba(255, 255, 255, 0.6);
+    
+
+    
 }
 
 .label-text{
@@ -981,11 +984,23 @@ color: var(--accent-color-black)
 
 
 .label-btn{
+    
     width: 200px;
     height: 50px;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    cursor: pointer;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    
+    letter-spacing: 0.06em;
+    
+    color: #FFFFFF;
     
 }
 
