@@ -916,11 +916,18 @@ color: var(--accent-color-black)
 .futer-container{
     display:flex;
     flex-direction: column;
-    margin-left: 93px;
+    margin-left:auto;
+    
+}
+
+.futer-label{
+    display: flex;
     
 }
 
 .futer-label-area{
+
+   
     padding-left: 16px;
     padding-top: 15px;
     padding-right: auto;
@@ -949,6 +956,8 @@ color: var(--accent-color-black)
 }
 
 .label-text{
+    
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -962,11 +971,13 @@ color: var(--accent-color-black)
     margin-bottom: 20px;
 }
 
-.futer-label{
+.label-send{
     
     
     
 }
+
+
 
 .futer-text{
     margin-bottom: 20px;
@@ -984,7 +995,10 @@ color: var(--accent-color-black)
 
 
 .label-btn{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
     width: 200px;
     height: 50px;
     background: #2196F3;
@@ -997,10 +1011,23 @@ color: var(--accent-color-black)
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    
     letter-spacing: 0.06em;
+
+    padding-left: 29px;
+    padding-top: 10px;
+    padding-right: 28px;   
+    padding-bottom: 10px;
     
     color: #FFFFFF;
+    
+}
+
+.label-icon{
+    display: inline;
+    
+    
+    margin-left: 10px;
+    
     
 }
 
