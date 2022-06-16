@@ -481,7 +481,7 @@
             <h2 class="label-text">Подпишитесь на рассылку</h2>
             <form class="futer-label" >
                 <label for="mail" class="label-send" ></label>
-                <input type="mail" name="mail" id="mail" placeholder="E-mail" class="futer-label-area" />
+                <input type="mail" name="user-mail" id="mail" placeholder="E-mail" class="futer-label-area" />
                 
 
                 <button type="submit" class="label-btn">
@@ -504,9 +504,32 @@
 
 
     </footer>
-
-    <div class="backdrop is-hidden" data-modal>
+                        /*is-hidden*/
+    <div class="backdrop " data-modal>
         <div class="modal">
+            <b>Оставьте свои данные, мы вам перезвоним</b>
+            <form class="modal-form">
+                <label class="modal-label" >Имя
+                <input type="text" name="user-name" class="modal-input" ></label>
+
+                <label class="modal-label">Телефон
+                    <input type="tel" name="user-phone" class="modal-input"></label>
+
+                    <label class="modal-label">Почта
+                        <input type="mail" name="user-email" class="modal-input"></label>
+
+                        <label class="modal-label">Комментарий</label>
+                        <textarea name="comment" placeholder="Введите текст" class="modal-input"></textarea> 
+
+                        <label class="modal-label">
+                            <input type="checkbox" name="checkbox-policy" class="modal-input">
+                            <p>Соглашаюсь с рассылкой и принимаю Условия договора</p>
+                        </label>
+
+                        <button type="submit" class="modal-btn-send" >Отправить</button>
+
+
+            </form>
             <button type="button" class="modal-close-button" data-modal-close>
                 <svg class="modal-close-button-icon" width="11px" height="11px" >
                     <use href="./images/icons.svg#icon-close-icon"></use>
